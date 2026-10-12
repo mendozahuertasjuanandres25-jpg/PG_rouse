@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=", initial-scale=1.0">
+        <title>Jornada Mixta</title>
+    </head>
+    <body style="text-align: left;">
+        <!-- Presentación principal -->
+        <div id="anuncios" class="announcement-banner">
+            <span class="announcement-badge">ADSSO MIXTO · 3411009</span>
+            <p>¡Bienvenido! Somos estudiantes de Análisis y Desarrollo de Software.</p>
+        </div>
+        <div class="hero-intro">
+            <h1 class="hero-title">Software</h1>
+            <p class="hero-lead">Ideas que se convierten en experiencias digitales.</p>
+            <div class="hero-message">
+                <h2>¡Bienvenido a nuestra página de software!</h2>
+                <h3>¡Descubre tu estilo único!</h3>
+                <p>Explora recursos y herramientas para aprender, crear y expresar tu personalidad en cada proyecto.</p>
+                <p>¡Empieza hoy y lleva tus ideas al mundo!</p>
+            </div>
+        </div>
+                <!--estilo de navegacion-->
+                <nav>
+                    <ul class="navigation-list">
+                        <li><a href="index.html">Aprendiz</a></li>
+                        <li><a href="trabajo.html">Estudio</a></li>
+                        <li><a href="contacto.html">Materias</a></li>
+                    </ul>
+                </nav>
+                <!--cuadro de texto-->
+                <section id="software-card">
+                    <h1 id="software-welcome">venda bonice o vive cien 100</h1>
+
+                    <p>
+                        En nuestra página, encontrarás una amplia variedad de recursos y herramientas para aprender y desarrollar tus habilidades en el campo del software. Desde tutoriales interactivos hasta proyectos prácticos, estamos aquí para ayudarte a crecer como desarrollador.
+                    </p>
+                </section>
+                <!-- textos de informacion-->
+                <section id="secciones-informacion">
+                    <h2>Explora nuestras secciones</h2>
+                    <p>
+                        Navega por nuestras diferentes secciones para descubrir contenido relevante y actualizado sobre las últimas tendencias en desarrollo de software. Ya sea que estés interesado en programación, diseño de interfaces o gestión de proyectos, tenemos algo para ti.
+                    </p>
+                    <!---colocar un titulo en moviento que va decir imagenes en html con caracterizticas de texto-->
+                    <div style="width: min(100%, 900px); margin: 20px 0;">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 18px;">
+                            <figure style="position: relative; margin: 0; overflow: hidden; border-radius: 12px; background: #fff; box-shadow: 0 4px 14px rgba(23, 105, 170, 0.12);">
+                                <img src="../IMG/descarga (6).jpg" alt="Imagen relacionada con HTML" style="display: block; width: 100%; height: 280px; object-fit: contain; background: #f4f8fc;">
+                                <figcaption style="position: absolute; right: 0; bottom: 0; left: 0; padding: 16px; background: linear-gradient(transparent, rgba(0, 0, 0, 0.78)); color: #fff; font-size: 18px; font-weight: 600; text-align: center;">Aprende los fundamentos de HTML</figcaption>
+                            </figure>
+                            <figure style="position: relative; margin: 0; overflow: hidden; border-radius: 12px; background: #fff; box-shadow: 0 4px 14px rgba(23, 105, 170, 0.12);">
+                                <img src="../IMG/LeMickey James.jpg" alt="Segunda imagen relacionada con HTML" style="display: block; width: 100%; height: 280px; object-fit: contain; background: #f4f8fc;">
+                                <figcaption style="position: absolute; right: 0; bottom: 0; left: 0; padding: 16px; background: linear-gradient(transparent, rgba(0, 0, 0, 0.78)); color: #fff; font-size: 18px; font-weight: 600; text-align: center;">Crea páginas web con estilo</figcaption>
+                            </figure>
+                            <figure style="position: relative; margin: 0; overflow: hidden; border-radius: 12px; background: #fff; box-shadow: 0 4px 14px rgba(23, 105, 170, 0.12);">
+                                <img src="../IMG/descarga (7).jpg" alt="Tercera imagen relacionada con HTML" style="display: block; width: 100%; height: 280px; object-fit: contain; background: #f4f8fc;">
+                                <figcaption style="position: absolute; right: 0; bottom: 0; left: 0; padding: 16px; background: linear-gradient(transparent, rgba(0, 0, 0, 0.78)); color: #fff; font-size: 18px; font-weight: 600; text-align: center;">Descubre más sobre desarrollo web</figcaption>
+                            </figure>
+                        </div>
+                        <h3 style="margin: 18px 0 0; color: #174f7a; text-align: center; text-shadow: none; animation: none;">Imágenes en HTML con características de texto</h3>
+                    </div>
+                    <aside class="spotify-player" aria-label="Reproductor de audio">
+                        <div class="player-heading">
+                            <span class="player-indicator" aria-hidden="true"></span>
+                            <div><strong>Ahora suena</strong><small>Tu espacio de aprendizaje</small></div>
+                        </div>
+                        <audio loop controls preload="metadata">
+                            <source src="../Audio/WhatsApp Audio 2026-10-09 at 8.46.23 PM.mp4" type="audio/mp4">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </aside>
+                </section>
+                <style>
+                    .announcement-banner {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 12px;
+                        padding: 12px 20px;
+                        background: linear-gradient(110deg, #123b5d, #087e82);
+                        color: #fff;
+                        text-align: center;
+                    }
+                    .announcement-banner p { margin: 0; color: #fff; text-align: center; }
+                    .announcement-badge {
+                        padding: 5px 10px;
+                        border: 1px solid rgba(255, 255, 255, 0.55);
+                        border-radius: 999px;
+                        font-size: 12px;
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                    }
+                    .hero-intro {
+                        overflow: hidden;
+                        padding: 42px 20px 34px;
+                        background: radial-gradient(ellipse at top, #fff 0%, #e5f4f7 72%);
+                        text-align: center;
+                    }
+                    .hero-title {
+                        display: inline-block;
+                        margin: 0 0 8px;
+                        color: #123b5d;
+                        letter-spacing: 3px;
+                        animation: title-float 3s ease-in-out infinite;
+                    }
+                    .hero-lead { color: #087e82; font-size: 18px; font-weight: 600; text-align: center; }
+                    .hero-message { max-width: 760px; margin: 24px auto 0; }
+                    .hero-message h2 { color: #174f7a; text-shadow: none; }
+                    .hero-message h3 {
+                        display: inline-block;
+                        color: #087e82;
+                        text-shadow: none;
+                        animation: letter-glow 2.8s ease-in-out infinite;
+                    }
+                    .hero-message p { text-align: center; }
+                    @keyframes title-float {
+                        0%, 100% { transform: translateY(0); }
+                        50% { transform: translateY(-8px); }
+                    }
+                    @keyframes letter-glow {
+                        0%, 100% { letter-spacing: 0; transform: translateX(0); }
+                        50% { letter-spacing: 2px; transform: translateX(6px); }
+                    }
+                    @media (prefers-reduced-motion: reduce) {
+                        .hero-title, .hero-message h3 { animation: none; }
+                    }
+                    #software-card {
+                        max-width: 850px;
+                        margin: 28px auto;
+                        padding: 26px 30px;
+                        border: 2px solid #b8e4df;
+                        border-radius: 18px;
+                        background: linear-gradient(135deg, #ffffff, #e4f8f5);
+                        box-shadow: 0 10px 24px rgba(28, 110, 112, 0.16);
+                        animation: rebotar 1s ease-in-out infinite alternate;
+                    }
+                    @keyframes rebotar {
+                        from { transform: translateY(0); }
+                        to { transform: translateY(-12px); }
+                    }
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f2f2f2;
+                        color: #333;
+                        padding-top: 50px;
+                    }
+                    .spotify-player {
+                        position: fixed;
+                        right: 18px;
+                        bottom: 24px;
+                        z-index: 9999;
+                        width: min(300px, calc(100vw - 36px));
+                        box-sizing: border-box;
+                        padding: 17px;
+                        border: 1px solid rgba(255, 255, 255, 0.12);
+                        border-radius: 16px;
+                        background: linear-gradient(145deg, #202020, #101010);
+                        color: #fff;
+                        box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+                    }
+                    .player-heading { display: flex; align-items: center; gap: 11px; margin-bottom: 12px; }
+                    .player-indicator { width: 10px; height: 10px; flex: 0 0 10px; border-radius: 50%; background: #1ed760; box-shadow: 0 0 12px rgba(30, 215, 96, 0.7); }
+                    .player-heading strong, .player-heading small { display: block; }
+                    .player-heading strong { font-size: 14px; letter-spacing: 0.2px; }
+                    .player-heading small { margin-top: 3px; color: #b3b3b3; font-size: 12px; }
+                    .spotify-player audio { display: block; width: 100%; height: 38px; }
+                    @media (max-width: 600px) {
+                        .spotify-player { right: 12px; bottom: 12px; width: min(280px, calc(100vw - 24px)); }
+                    }
+                    nav {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        z-index: 1000;
+                        background: #fff;
+                        border-bottom: 2px solid #1769aa;
+                        box-shadow: 0 3px 12px rgba(23, 105, 170, 0.12);
+                    }
+                    .navigation-list {
+                        display: flex;
+                        justify-content: center;
+                        gap: 8px;
+                        list-style: none;
+                        margin: 0;
+                        padding: 8px 16px;
+                    }
+                    .navigation-list a {
+                        display: block;
+                        padding: 10px 18px;
+                        border: 1px solid #b8d5ee;
+                        border-radius: 8px;
+                        color: #174f7a;
+                        font-weight: 600;
+                        text-decoration: none;
+                        transition: background-color 0.2s, color 0.2s;
+                    }
+                    .navigation-list a:hover,
+                    .navigation-list a:focus-visible {
+                        background: #1769aa;
+                        color: #fff;
+                    }
+                    h1 {
+                        font-size: 36px; color: #ff6600; text-shadow: 2px 2px #4fb8b2;
+                    }
+                    #software-welcome {
+                        color: #087e82;
+                        text-align: center;
+                        text-shadow: none;
+                    }
+                    @media (max-width: 600px) {
+                        #software-card {
+                            margin: 20px 12px;
+                            padding: 20px 16px;
+                        }
+                        #software-welcome {
+                            font-size: 28px;
+                        }
+                    }
+                    h2 {
+                        font-size: 28px; color: #0066cc; text-shadow: 1px 1px #3f6290;
+                    }
+                    h3 {
+                        font-size: 24px; color: #cc0000; text-shadow: 1px 1px #5f8faf;
+                        animation: mover-texto 3s ease-in-out infinite alternate;
+                    }
+                    #secciones-informacion h3 {
+                        display: inline-block;
+                        animation: girar-titulo 4s ease-in-out infinite;
+                        transform-origin: center;
+                    }
+                    @keyframes girar-titulo {
+                        from { transform: rotate(0deg); }
+                        to { transform: rotate(360deg); }
+                    }
+                    @keyframes mover-texto {
+                        from { transform: translateX(0); }
+                        to { transform: translateX(40px); }
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 1.8;
+                        margin: 0 0 18px;
+                        letter-spacing: 0.3px;
+                        text-align: justify;
+                        color:#4fb8b2
+                    }
+                    #secciones-informacion > p {
+                        animation: mover-informacion 4s ease-in-out infinite;
+                        transform-origin: center;
+                    }
+                    #secciones-informacion > p:hover {
+                        animation-play-state: paused;
+                        color: #087e82;
+                    }
+                    @keyframes mover-informacion {
+                        0%, 100% { transform: translate(0, 0); }
+                        25% { transform: translate(12px, -8px); }
+                        50% { transform: translate(0, 8px); }
+                        75% { transform: translate(-12px, -4px); }
+                    }
+                </style>
+                <br>
+            </div>
+            <footer class="footer-marketplace">
+                <div class="footer-benefits">
+                    <div><span aria-hidden="true">🚚</span><h3>Aprende y desarrolla</h3><p>Recursos para impulsar tus proyectos de software.</p></div>
+                    <div><span aria-hidden="true">💻</span><h3>Contenido práctico</h3><p>Explora tutoriales y herramientas a tu propio ritmo.</p></div>
+                    <div><span aria-hidden="true">🔒</span><h3>Siempre a tu alcance</h3><p>Un espacio para seguir aprendiendo y creciendo.</p></div>
+                </div>
+                <div class="footer-bottom">
+                    <a href="index.html">Aprendiz</a>
+                    <a href="trabajo.html">Estudio</a>
+                    <a href="contacto.html">Materias</a>
+                    <small>© 2026 Jornada Mixta · ADSSO MIXTO 3411009</small>
+                </div>
+            </footer>
+            <style>
+                .footer-marketplace { margin-top: 48px; background: #fff; color: #263548; border-top: 2px solid #1769aa; }
+                .footer-benefits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 30px 24px; background: #f4f8fc; text-align: center; }
+                .footer-benefits > div { padding: 22px 18px; background: #fff; border: 1px solid #b8d5ee; border-radius: 12px; box-shadow: 0 4px 14px rgba(23, 105, 170, 0.08); }
+                .footer-benefits span { font-size: 28px; }
+                .footer-benefits h3 { margin: 8px 0; color: #174f7a; font-size: 17px; text-shadow: none; animation: none; }
+                .footer-benefits p { margin: 0; color: #555; font-size: 13px; line-height: 1.5; text-align: center; }
+                .footer-bottom { display: flex; flex-wrap: wrap; gap: 18px; max-width: 1000px; margin: auto; padding: 20px 24px; }
+                .footer-bottom a { color: #315d7d; text-decoration: none; }
+                .footer-bottom a:hover { color: #087e82; text-decoration: underline; }
+                .footer-bottom small { flex-basis: 100%; color: #777; }
+                @media (max-width: 600px) { .footer-benefits { grid-template-columns: 1fr; } }
+            </style>
+            </body>
+        </html>
+</html>
