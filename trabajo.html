@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content=", initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jornada Mixta</title>
     </head>
     <body style="text-align: left;">
@@ -11,19 +11,53 @@
             <span class="announcement-badge">ADSSO MIXTO · 3411009</span>
             <p>¡Bienvenido! Somos estudiantes de Análisis y Desarrollo de Software.</p>
         </div>
-        <div class="hero-intro">
-            <h1 class="hero-title">Software</h1>
-            <p class="hero-lead">Ideas que se convierten en experiencias digitales.</p>
-            <div class="hero-message">
-                <h2>¡Bienvenido a nuestra página de software!</h2>
-                <h3>¡Descubre tu estilo único!</h3>
-                <p>Explora recursos y herramientas para aprender, crear y expresar tu personalidad en cada proyecto.</p>
-                <p>¡Empieza hoy y lleva tus ideas al mundo!</p>
+
+        <section class="mercado-intro" aria-label="Presentación de la tienda de recursos digitales">
+            <div class="mercado-copy">
+                <span class="mercado-chip">RECURSOS PARA DESARROLLADORES</span>
+                <h1 class="hero-title">Lleva tus ideas<br>al siguiente nivel</h1>
+                <p class="hero-lead">Aprende. Diseña. Construye.</p>
+                <p class="mercado-text">Encuentra cursos, herramientas y recursos digitales seleccionados para ayudarte a crear mejores proyectos.</p>
+                <div class="mercado-cta">
+                    <a href="#productos">Explorar productos</a>
+                    <a class="mercado-cta-secondary" href="#software-card">Conocer el proyecto</a>
+                </div>
             </div>
-        </div>
+            <div class="mercado-image-wrap">
+                <img class="mercado-image" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Persona trabajando con tecnología">
+            </div>
+        </section>
+        <section class="products-section" id="productos" aria-labelledby="products-title">
+            <div class="products-heading">
+                <div><span class="products-eyebrow">SELECCIÓN PARA TI</span><h2 id="products-title">Recursos destacados</h2></div>
+                <p>Soluciones prácticas para aprender y hacer realidad tus ideas.</p>
+            </div>
+            <div class="products-grid">
+                <article class="product-card">
+                    <a class="product-image-link" href="#software-card" aria-label="Conoce el curso de desarrollo web"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80" alt="Espacio de trabajo para desarrollo web" loading="lazy"><span class="product-label">MÁS VENDIDO</span></a>
+                    <div class="product-info"><span class="product-category">CURSO · PRINCIPIANTES</span><h3>Desarrollo web desde cero</h3><p>Aprende HTML, CSS y crea tu primera página.</p><div class="product-rating" aria-label="Calificación: 4.9 de 5">★★★★★ <span>4.9</span></div><div class="product-price">$49.900 <small>COP</small></div><a class="product-link" href="#software-card">Ver recurso <span aria-hidden="true">→</span></a></div>
+                </article>
+                <article class="product-card">
+                    <a class="product-image-link" href="#software-card" aria-label="Conoce el kit de diseño de interfaces"><img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=700&q=80" alt="Diseño de interfaz digital" loading="lazy"><span class="product-label product-label-new">PARA DISEÑAR</span></a>
+                    <div class="product-info"><span class="product-category">DISEÑO · UI</span><h3>Kit de interfaces UI</h3><p>Componentes y plantillas para diseñar con coherencia.</p><div class="product-rating" aria-label="Calificación: 4.8 de 5">★★★★★ <span>4.8</span></div><div class="product-price">$29.900 <small>COP</small></div><a class="product-link" href="#software-card">Ver recurso <span aria-hidden="true">→</span></a></div>
+                </article>
+                <article class="product-card">
+                    <a class="product-image-link" href="#software-card" aria-label="Conoce las plantillas web"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80" alt="Analítica y diseño de un sitio web" loading="lazy"><span class="product-label product-label-value">AHORRA TIEMPO</span></a>
+                    <div class="product-info"><span class="product-category">PLANTILLAS · WEB</span><h3>Plantillas web modernas</h3><p>Diseños adaptables para iniciar tus proyectos más rápido.</p><div class="product-rating" aria-label="Calificación: 4.7 de 5">★★★★★ <span>4.7</span></div><div class="product-price">$19.900 <small>COP</small></div><a class="product-link" href="#software-card">Ver recurso <span aria-hidden="true">→</span></a></div>
+                </article>
+                <article class="product-card">
+                    <a class="product-image-link" href="#software-card" aria-label="Conoce la guía práctica de Git"><img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&w=700&q=80" alt="Herramientas para desarrollo de software" loading="lazy"><span class="product-label product-label-new">APRENDE A TU RITMO</span></a>
+                    <div class="product-info"><span class="product-category">GUÍA · DESARROLLO</span><h3>Git y GitHub en práctica</h3><p>Organiza versiones y colabora mejor en tus proyectos.</p><div class="product-rating" aria-label="Calificación: 4.9 de 5">★★★★★ <span>4.9</span></div><div class="product-price">$14.900 <small>COP</small></div><a class="product-link" href="#software-card">Ver recurso <span aria-hidden="true">→</span></a></div>
+                </article>
+            </div>
+        </section>
                 <!--estilo de navegacion-->
                 <nav>
-                    <ul class="navigation-list">
+                    <a class="sena-brand" href="index.html" aria-label="SENA, inicio" style="display: inline-flex; align-items: center; gap: 10px;">
+                        <img src="../IMG/images.png" alt="Logo del SENA">
+                    </a>
+                    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navigation-list"><span></span><span></span><span></span></button>
+                    <ul class="navigation-list" id="navigation-list">
                         <li><a href="index.html">Aprendiz</a></li>
                         <li><a href="trabajo.html">Estudio</a></li>
                         <li><a href="contacto.html">Materias</a></li>
@@ -31,46 +65,140 @@
                 </nav>
                 <!--cuadro de texto-->
                 <section id="software-card">
-                    <h1 id="software-welcome">venda bonice o vive cien 100</h1>
-
-                    <p>
-                        En nuestra página, encontrarás una amplia variedad de recursos y herramientas para aprender y desarrollar tus habilidades en el campo del software. Desde tutoriales interactivos hasta proyectos prácticos, estamos aquí para ayudarte a crecer como desarrollador.
-                    </p>
+                    <h1 id="software-welcome">Aprende, crea y desarrolla</h1>
+                    <div class="software-card-layout">
+                        <div class="software-card-copy">
+                            <p>En este espacio encontrarás recursos y herramientas para aprender y desarrollar tus habilidades en software. Avanza desde los conceptos básicos hasta la creación de proyectos, con contenidos que puedes consultar a tu propio ritmo.</p>
+                            <p>Explora programación web, diseño de interfaces, control de versiones con Git y trabajo colaborativo. Pon en práctica cada aprendizaje con ejercicios y proyectos, fortalece tu portafolio y descubre nuevas formas de resolver problemas.</p>
+                            <h2>Aprende con acompañamiento</h2>
+                            <p>Nuestros instructores orientan tu proceso de formación, comparten buenas prácticas y te animan a experimentar, preguntar y construir soluciones. La imagen muestra una sesión de aprendizaje colaborativo.</p>
+                        </div>
+                        <figure class="instructors-photo">
+                            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=900&q=85" alt="Instructora acompañando a estudiantes durante una clase" loading="lazy">
+                            <figcaption>Formación práctica y acompañamiento para convertir tus ideas en proyectos.</figcaption>
+                        </figure>
+                    </div>
                 </section>
                 <!-- textos de informacion-->
                 <section id="secciones-informacion">
                     <h2>Explora nuestras secciones</h2>
                     <p>
-                        Navega por nuestras diferentes secciones para descubrir contenido relevante y actualizado sobre las últimas tendencias en desarrollo de software. Ya sea que estés interesado en programación, diseño de interfaces o gestión de proyectos, tenemos algo para ti.
+                        Conoce cómo el SENA impulsa el talento colombiano con formación gratuita, práctica y conectada con las necesidades del mundo laboral. Explora sus oportunidades de aprendizaje y descubre cómo convertir tus ideas en proyectos.
                     </p>
-                    <!---colocar un titulo en moviento que va decir imagenes en html con caracterizticas de texto-->
-                    <div style="width: min(100%, 900px); margin: 20px 0;">
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 18px;">
-                            <figure style="position: relative; margin: 0; overflow: hidden; border-radius: 12px; background: #fff; box-shadow: 0 4px 14px rgba(23, 105, 170, 0.12);">
-                                <img src="../IMG/descarga (6).jpg" alt="Imagen relacionada con HTML" style="display: block; width: 100%; height: 280px; object-fit: contain; background: #f4f8fc;">
-                                <figcaption style="position: absolute; right: 0; bottom: 0; left: 0; padding: 16px; background: linear-gradient(transparent, rgba(0, 0, 0, 0.78)); color: #fff; font-size: 18px; font-weight: 600; text-align: center;">Aprende los fundamentos de HTML</figcaption>
-                            </figure>
-                            <figure style="position: relative; margin: 0; overflow: hidden; border-radius: 12px; background: #fff; box-shadow: 0 4px 14px rgba(23, 105, 170, 0.12);">
-                                <img src="../IMG/LeMickey James.jpg" alt="Segunda imagen relacionada con HTML" style="display: block; width: 100%; height: 280px; object-fit: contain; background: #f4f8fc;">
-                                <figcaption style="position: absolute; right: 0; bottom: 0; left: 0; padding: 16px; background: linear-gradient(transparent, rgba(0, 0, 0, 0.78)); color: #fff; font-size: 18px; font-weight: 600; text-align: center;">Crea páginas web con estilo</figcaption>
-                            </figure>
-                            <figure style="position: relative; margin: 0; overflow: hidden; border-radius: 12px; background: #fff; box-shadow: 0 4px 14px rgba(23, 105, 170, 0.12);">
-                                <img src="../IMG/descarga (7).jpg" alt="Tercera imagen relacionada con HTML" style="display: block; width: 100%; height: 280px; object-fit: contain; background: #f4f8fc;">
-                                <figcaption style="position: absolute; right: 0; bottom: 0; left: 0; padding: 16px; background: linear-gradient(transparent, rgba(0, 0, 0, 0.78)); color: #fff; font-size: 18px; font-weight: 600; text-align: center;">Descubre más sobre desarrollo web</figcaption>
-                            </figure>
+                    <style>
+                        #secciones-informacion .sena-catalog {
+                            margin: 36px 0;
+                            padding: clamp(20px, 4vw, 36px);
+                            border: 1px solid #dce5e3;
+                            border-radius: 20px;
+                            background: linear-gradient(145deg, #f8fbfa, #eef5f3);
+                            color: #20332f;
+                            box-shadow: 0 12px 32px rgba(24, 66, 57, .07);
+                        }
+                        #secciones-informacion .sena-catalog header { margin-bottom: 28px; text-align: left; }
+                        #secciones-informacion .catalog-label {
+                            display: inline-block;
+                            margin-bottom: 10px;
+                            padding: 7px 12px;
+                            border-radius: 999px;
+                            background: #ffe600;
+                            color: #26332e;
+                            font-size: 11px;
+                            font-weight: 800;
+                            letter-spacing: .8px;
+                        }
+                        #secciones-informacion .catalog-title { margin: 0 0 8px; color: #183d35; font-size: clamp(24px, 3vw, 32px); line-height: 1.2; text-shadow: none; animation: none; }
+                        #secciones-informacion .catalog-intro { max-width: 650px; margin: 0; color: #52645f; line-height: 1.7; }
+                        #secciones-informacion .catalog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 22px; }
+                        #secciones-informacion .catalog-card { overflow: hidden; border: 1px solid #e1e9e6; border-radius: 15px; background: #fff; box-shadow: 0 4px 14px rgba(21, 55, 47, .06); transition: transform .2s ease, box-shadow .2s ease; }
+                        #secciones-informacion .catalog-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(21, 55, 47, .13); }
+                        #secciones-informacion .catalog-card img { display: block; width: 100%; height: 180px; object-fit: cover; }
+                        #secciones-informacion .catalog-card-content { padding: 20px; }
+                        #secciones-informacion .catalog-category { color: #087e68; font-size: 11px; font-weight: 800; letter-spacing: .8px; }
+                        #secciones-informacion .catalog-card h4 { margin: 9px 0; color: #203b34; font-size: 19px; line-height: 1.3; }
+                        #secciones-informacion .catalog-card p { margin: 0; color: #5b6965; font-size: 14px; line-height: 1.65; }
+                        #secciones-informacion .jornada-info { display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: clamp(22px, 4vw, 40px); margin: 32px 0; padding: clamp(20px, 3vw, 32px); border: 1px solid #dce9e5; border-radius: 18px; background: linear-gradient(135deg, #f0f7f5, #e6f1ed); }
+                        #secciones-informacion .jornada-info h3 { margin: 0 0 14px; color: #174f4a; font-size: clamp(21px, 2.5vw, 27px); }
+                        #secciones-informacion .jornada-info p { margin: 0 0 14px; color: #435a54; line-height: 1.7; }
+                        #secciones-informacion .jornada-info ul { margin: 0 0 14px; padding-left: 22px; color: #435a54; line-height: 1.9; }
+                        #secciones-informacion .jornada-info li { padding-left: 3px; }
+                        #secciones-informacion .jornada-info li::marker { color: #087e68; }
+                        #secciones-informacion .jornada-info img { display: block; width: 100%; min-height: 250px; border-radius: 14px; object-fit: cover; box-shadow: 0 8px 20px rgba(25, 57, 50, .12); }
+                        #secciones-informacion .spotify-player { max-width: 520px; margin: 28px auto 8px; padding: 20px; border: 1px solid #e1e8e5; border-radius: 16px; background: #fff; box-shadow: 0 8px 24px rgba(25, 57, 50, .08); }
+                        #secciones-informacion .spotify-brand { display: flex; align-items: center; gap: 9px; margin-bottom: 16px; color: #1b2b26; font-weight: 750; }
+                        #secciones-informacion .spotify-logo { width: 26px; height: 26px; color: #1db954; }
+                        #secciones-informacion .player-track { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+                        #secciones-informacion .track-artwork { width: 56px; height: 56px; border-radius: 9px; object-fit: cover; }
+                        #secciones-informacion .track-details { display: grid; gap: 4px; color: #263a33; }
+                        #secciones-informacion .track-details span { color: #687872; font-size: 13px; }
+                        #secciones-informacion .spotify-player audio { display: block; width: 100%; }
+                        @media (prefers-reduced-motion: reduce) {
+                            #secciones-informacion .catalog-card { transition: none; }
+                            #secciones-informacion .catalog-card:hover { transform: none; }
+                        }
+                        @media (max-width: 600px) {
+                            #secciones-informacion .sena-catalog { margin: 26px 0; }
+                            #secciones-informacion .catalog-card img { height: 165px; }
+                            #secciones-informacion .jornada-info { grid-template-columns: 1fr; padding: 18px; }
+                            #secciones-informacion .jornada-info img { min-height: 190px; }
+                            #secciones-informacion .spotify-player { padding: 16px; }
+                        }
+                    </style>
+                    <div class="sena-catalog">
+                        <header>
+                            <span class="catalog-label">FORMACIÓN PARA EL FUTURO</span>
+                            <h3 class="catalog-title">Catálogo de formación SENA</h3>
+                            <p class="catalog-intro">Explora áreas de aprendizaje para desarrollar habilidades prácticas y construir nuevas oportunidades.</p>
+                        </header>
+                        <div class="catalog-grid">
+                            <article class="catalog-card">
+                                <img src="../IMG/web1.jpg" alt="Formación en fundamentos de HTML" loading="lazy">
+                                <div class="catalog-card-content"><span class="catalog-category">TECNOLOGÍA</span><h4>Desarrollo web</h4><p>Aprende los fundamentos de HTML y crea la estructura de sitios web.</p></div>
+                            </article>
+                            <article class="catalog-card">
+                                <img src="../IMG/inter_fas.jpg" alt="Aprendizaje de diseño y creación de páginas web" loading="lazy">
+                                <div class="catalog-card-content"><span class="catalog-category">DISEÑO DIGITAL</span><h4>Diseño de interfaces</h4><p>Conoce principios visuales para crear experiencias web claras y atractivas.</p></div>
+                            </article>
+                            <article class="catalog-card">
+                                <img src="../IMG/software_pr.png" alt="Recursos para aprender desarrollo de software" loading="lazy">
+                                <div class="catalog-card-content"><span class="catalog-category">INNOVACIÓN</span><h4>Software y proyectos</h4><p>Fortalece tus conocimientos con proyectos y recursos de aprendizaje.</p></div>
+                            </article>
                         </div>
-                        <h3 style="margin: 18px 0 0; color: #174f7a; text-align: center; text-shadow: none; animation: none;">Imágenes en HTML con características de texto</h3>
                     </div>
-                    <aside class="spotify-player" aria-label="Reproductor de audio">
-                        <div class="player-heading">
-                            <span class="player-indicator" aria-hidden="true"></span>
-                            <div><strong>Ahora suena</strong><small>Tu espacio de aprendizaje</small></div>
+                    <div class="jornada-info">
+                        <div>
+                            <h3>Jornadas de formación</h3>
+                            <p>Organiza tu aprendizaje de acuerdo con la jornada disponible y aprovecha cada espacio para avanzar en tu formación. Las actividades combinan explicación, práctica y acompañamiento de instructores.</p>
+                            <ul>
+                                <li><strong>Jornada diurna:</strong> clases y talleres durante el día.</li>
+                                <li><strong>Jornada nocturna:</strong> una alternativa para quienes estudian o trabajan.</li>
+                                <li><strong>Jornada mixta:</strong> actividades presenciales y aprendizaje autónomo.</li>
+                            </ul>
+                            <p>Consulta los horarios y la disponibilidad de cada programa en los canales oficiales del SENA.</p>
                         </div>
-                        <audio loop controls preload="metadata">
-                            <source src="../Audio/WhatsApp Audio 2026-10-09 at 8.46.23 PM.mp4" type="audio/mp4">
-                            Tu navegador no soporta el elemento de audio.
-                        </audio>
-                    </aside>
+                        <img src="../IMG/sena_jn.jpg" alt="Aprendices participando en una jornada de formación" loading="lazy">
+                    </div>
+                    <section class="videos-formacion" aria-labelledby="titulo-videos" style="padding:32px 20px;text-align:center;">
+                        <h2 id="titulo-videos">Videos sobre las jornadas de formación</h2>
+                        <p>Explora videos sobre las diferentes opciones de formación del SENA.</p>
+                        <div class="video-grid" aria-label="Videos de formación" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,280px));justify-content:center;gap:20px;max-width:900px;margin:24px auto 0;">
+                            <a href="https://www.youtube.com/results?search_query=SENA+formaci%C3%B3n+jornada+diurna" target="_blank" rel="noopener noreferrer" style="position:relative;display:block;overflow:hidden;color:inherit;text-align:left;text-decoration:none;background:#fff;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.12);">
+                                <img src="https://images.unsplash.com/photo-1524178222181-1c2b8c7a7f3d?auto=format&fit=crop&w=600&q=85" alt="Aprendices en una actividad de formación diurna" loading="lazy" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;">
+                                <span aria-hidden="true" style="position:absolute;top:27%;left:43%;padding:8px 14px;border-radius:8px;background:#ff0000;color:#fff;font-size:20px;">▶</span>
+                                <span style="display:block;padding:14px;font-weight:700;">Jornada diurna</span>
+                            </a>
+                            <a href="https://www.youtube.com/results?search_query=SENA+formaci%C3%B3n+jornada+nocturna" target="_blank" rel="noopener noreferrer" style="position:relative;display:block;overflow:hidden;color:inherit;text-align:left;text-decoration:none;background:#fff;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.12);">
+                                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=85" alt="Aprendices participando en formación nocturna" loading="lazy" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;">
+                                <span aria-hidden="true" style="position:absolute;top:27%;left:43%;padding:8px 14px;border-radius:8px;background:#ff0000;color:#fff;font-size:20px;">▶</span>
+                                <span style="display:block;padding:14px;font-weight:700;">Jornada nocturna</span>
+                            </a>
+                            <a href="https://www.youtube.com/results?search_query=SENA+formaci%C3%B3n+jornada+mixta" target="_blank" rel="noopener noreferrer" style="position:relative;display:block;overflow:hidden;color:inherit;text-align:left;text-decoration:none;background:#fff;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.12);">
+                                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=85" alt="Grupo de aprendices en una actividad de formación mixta" loading="lazy" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;">
+                                <span aria-hidden="true" style="position:absolute;top:27%;left:43%;padding:8px 14px;border-radius:8px;background:#ff0000;color:#fff;font-size:20px;">▶</span>
+                                <span style="display:block;padding:14px;font-weight:700;">Jornada mixta</span>
+                            </a>
+                        </div>
+                    </section>
                 </section>
                 <style>
                     .announcement-banner {
@@ -128,7 +256,7 @@
                         .hero-title, .hero-message h3 { animation: none; }
                     }
                     #software-card {
-                        max-width: 850px;
+                        max-width: 1100px;
                         margin: 28px auto;
                         padding: 26px 30px;
                         border: 2px solid #b8e4df;
@@ -137,6 +265,12 @@
                         box-shadow: 0 10px 24px rgba(28, 110, 112, 0.16);
                         animation: rebotar 1s ease-in-out infinite alternate;
                     }
+                    .software-card-layout { display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 28px; }
+                    .software-card-copy p { color: #4b6475; }
+                    .software-card-copy h2 { margin: 20px 0 10px; color: #087e82; font-size: 22px; text-shadow: none; }
+                    .instructors-photo { overflow: hidden; margin: 0; border-radius: 14px; background: #eaf2f8; box-shadow: 0 12px 28px rgba(20, 40, 70, .16); }
+                    .instructors-photo img { display: block; width: 100%; height: 310px; object-fit: cover; }
+                    .instructors-photo figcaption { padding: 12px 15px; color: #42566b; font-size: 13px; line-height: 1.5; }
                     @keyframes rebotar {
                         from { transform: translateY(0); }
                         to { transform: translateY(-12px); }
@@ -152,23 +286,25 @@
                         right: 18px;
                         bottom: 24px;
                         z-index: 9999;
-                        width: min(300px, calc(100vw - 36px));
+                        width: min(340px, calc(100vw - 36px));
                         box-sizing: border-box;
-                        padding: 17px;
-                        border: 1px solid rgba(255, 255, 255, 0.12);
-                        border-radius: 16px;
-                        background: linear-gradient(145deg, #202020, #101010);
+                        padding: 16px;
+                        border: 1px solid #303030;
+                        border-radius: 14px;
+                        background: #181818;
                         color: #fff;
-                        box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+                        box-shadow: 0 14px 40px rgba(0, 0, 0, 0.38);
                     }
-                    .player-heading { display: flex; align-items: center; gap: 11px; margin-bottom: 12px; }
-                    .player-indicator { width: 10px; height: 10px; flex: 0 0 10px; border-radius: 50%; background: #1ed760; box-shadow: 0 0 12px rgba(30, 215, 96, 0.7); }
-                    .player-heading strong, .player-heading small { display: block; }
-                    .player-heading strong { font-size: 14px; letter-spacing: 0.2px; }
-                    .player-heading small { margin-top: 3px; color: #b3b3b3; font-size: 12px; }
-                    .spotify-player audio { display: block; width: 100%; height: 38px; }
+                    .spotify-brand { display: flex; align-items: center; gap: 7px; margin-bottom: 14px; color: #1ed760; font-size: 14px; font-weight: 800; letter-spacing: -.3px; }
+                    .spotify-logo { display: block; width: 22px; height: 22px; }
+                    .player-track { display: flex; align-items: center; gap: 12px; min-width: 0; margin-bottom: 14px; }
+                    .track-artwork { display: block; width: 64px; height: 64px; flex: 0 0 64px; border-radius: 7px; background: #26352d; object-fit: cover; }
+                    .track-details { display: grid; gap: 5px; min-width: 0; }
+                    .track-details strong { overflow: hidden; color: #fff; font-size: 14px; text-overflow: ellipsis; white-space: nowrap; }
+                    .track-details span { color: #b3b3b3; font-size: 12px; }
+                    .spotify-player audio { display: block; width: 100%; height: 38px; accent-color: #1ed760; }
                     @media (max-width: 600px) {
-                        .spotify-player { right: 12px; bottom: 12px; width: min(280px, calc(100vw - 24px)); }
+                        .spotify-player { right: 12px; bottom: 12px; width: min(320px, calc(100vw - 24px)); }
                     }
                     nav {
                         position: fixed;
@@ -176,18 +312,37 @@
                         left: 0;
                         width: 100%;
                         z-index: 1000;
-                        background: #fff;
+                        background: #050914;
                         border-bottom: 2px solid #1769aa;
                         box-shadow: 0 3px 12px rgba(23, 105, 170, 0.12);
                     }
+                    .menu-toggle { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 42px; margin: 7px auto; padding: 9px; border: 1px solid #263244; border-radius: 8px; background: #0b1220; cursor: pointer; }
+                    .menu-toggle span { display: block; height: 2px; width: 100%; background: #5eead4; }
                     .navigation-list {
-                        display: flex;
+                        display: none;
+                        position: absolute;
+                        top: 56px;
+                        left: 0;
+                        right: 0;
+                        flex-direction: column;
                         justify-content: center;
                         gap: 8px;
                         list-style: none;
                         margin: 0;
                         padding: 8px 16px;
+                        background: #050914;
+                        border-bottom: 1px solid #263244;
                     }
+                    .navigation-list.is-open { display: flex; }
+                    .photo-carousel { position: relative; width: min(100%, 900px); margin: 20px 0; padding: 0 44px; box-sizing: border-box; }
+                    .carousel-viewport { overflow: hidden; }
+                    .carousel-track { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+                    .carousel-track::-webkit-scrollbar { display: none; }
+                    .carousel-track figure { scroll-snap-align: center; transition: transform 0.35s ease, box-shadow 0.35s ease; }
+                    .carousel-track figure:hover { transform: translateY(-4px); }
+                    .carousel-button { position: absolute; top: 42%; z-index: 2; width: 36px; height: 36px; border: 1px solid #263244; border-radius: 50%; background: #0b1220; color: #5eead4; font-size: 26px; cursor: pointer; }
+                    .carousel-previous { left: 2px; }
+                    .carousel-next { right: 2px; }
                     .navigation-list a {
                         display: block;
                         padding: 10px 18px;
@@ -216,6 +371,8 @@
                             margin: 20px 12px;
                             padding: 20px 16px;
                         }
+                        .software-card-layout { grid-template-columns: 1fr; gap: 12px; }
+                        .instructors-photo img { height: 220px; }
                         #software-welcome {
                             font-size: 28px;
                         }
@@ -290,7 +447,214 @@
                 .footer-bottom a:hover { color: #087e82; text-decoration: underline; }
                 .footer-bottom small { flex-basis: 100%; color: #777; }
                 @media (max-width: 600px) { .footer-benefits { grid-template-columns: 1fr; } }
+
+                /* Tema oscuro profesional */
+                body {
+                    background: #050914;
+                    color: #e2e8f0;
+                }
+                .announcement-banner { background: linear-gradient(110deg, #111827, #123b48); }
+                .hero-intro { background: radial-gradient(ellipse at top, #111827 0%, #050914 76%); }
+                .hero-title, .hero-message h2 { color: #f1f5f9; }
+                .hero-lead, .hero-message h3 { color: #5eead4; }
+                .hero-message p, #software-card p, #secciones-informacion > p { color: #cbd5e1; }
+                #software-card {
+                    border-color: #18343b;
+                    background: linear-gradient(135deg, #101827, #09191d);
+                    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+                }
+                .software-card-copy p { color: #cbd5e1; }
+                .software-card-copy h2 { color: #5eead4; }
+                .instructors-photo { background: #172333; }
+                .instructors-photo figcaption { color: #cbd5e1; }
+                #software-welcome { color: #5eead4; }
+                #secciones-informacion h2 { color: #e2e8f0; text-shadow: none; }
+                #secciones-informacion > div { color: #e2e8f0; }
+                #secciones-informacion figure {
+                    background: #172333 !important;
+                    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3) !important;
+                }
+                #secciones-informacion figure img { background: #111827 !important; }
+                #secciones-informacion > div > h3 { color: #5eead4 !important; }
+                nav {
+                    background: rgba(5, 9, 20, 0.98);
+                    border-bottom-color: #155e63;
+                    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+                }
+                .navigation-list a {
+                    border-color: #334155;
+                    color: #cbd5e1;
+                }
+                .navigation-list a:hover, .navigation-list a:focus-visible {
+                    background: #0f766e;
+                    color: #fff;
+                }
+                .footer-marketplace { background: #0f172a; color: #cbd5e1; border-top-color: #155e63; }
+                .footer-benefits { background: #111c2e; }
+                .footer-benefits > div { background: #172333; border-color: #334155; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); }
+                .footer-benefits h3 { color: #5eead4; }
+                .footer-benefits p { color: #cbd5e1; }
+                .footer-bottom a { color: #99f6e4; }
+                .footer-bottom small { color: #94a3b8; }
+                .menu-toggle, .carousel-button { background: #0b1220; border-color: #263244; }
+                .menu-toggle:hover, .carousel-button:hover { background: #123b3d; }
+                @media (max-width: 600px) {
+                    .navigation-list { gap: 4px; padding: 8px; }
+                    .navigation-list a { padding: 9px 12px; }
+                }
+                *, *::before, *::after { box-sizing: border-box; }
+                body { margin: 0; padding-top: 56px; }
+                #secciones-informacion { max-width: 1000px; margin: 0 auto; padding: 24px; }
+                #secciones-informacion > h2 { margin-top: 0; }
+                .photo-carousel { margin-right: auto; margin-left: auto; }
+                .carousel-track figure { flex-basis: min(100%, 320px) !important; }
+                .carousel-button { display: grid; place-items: center; transition: background-color 0.2s, transform 0.2s; }
+                .carousel-button:hover { transform: scale(1.08); }
+                .menu-toggle:focus-visible, .carousel-button:focus-visible, .navigation-list a:focus-visible { outline: 3px solid #5eead4; outline-offset: 3px; }
+                #software-card { animation: none; }
+                @media (max-width: 600px) {
+                    #secciones-informacion { padding: 20px 12px; }
+                    .photo-carousel { padding: 0 38px; }
+                    .carousel-track figure { flex-basis: 100% !important; }
+                }
+                @media (prefers-reduced-motion: reduce) {
+                    *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+                }
+                /* Paleta negra y azul */
+                .announcement-banner { background: linear-gradient(110deg, #050914, #123b72); }
+                .hero-intro { background: radial-gradient(ellipse at top, #111827 0%, #050914 76%); }
+                .hero-lead, .hero-message h3, #software-welcome { color: #60a5fa; }
+                #software-card { border-color: #1e3a8a; background: linear-gradient(135deg, #101827, #0b1426); }
+                nav { border-bottom-color: #2563eb; }
+                .menu-toggle span, .carousel-button { color: #60a5fa; }
+                .menu-toggle span { background: #60a5fa; }
+                .navigation-list a:hover, .navigation-list a:focus-visible,
+                .carousel-button:hover { background: #1d4ed8; }
+                .navigation-list a:hover, .navigation-list a:focus-visible { color: #fff; }
+                .footer-marketplace { border-top-color: #2563eb; }
+                .footer-benefits h3, .footer-bottom a { color: #60a5fa; }
+                .menu-toggle:focus-visible, .carousel-button:focus-visible,
+                .navigation-list a:focus-visible { outline-color: #60a5fa; }
+                /* Estilo inspirado en un marketplace: amarillo, azul y menú a la izquierda */
+                .mercado-intro { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 48px; max-width: 1180px; min-height: 370px; margin: 28px auto 0; padding: 46px 36px; border-radius: 18px; background: linear-gradient(115deg, #fff 42%, #edf4ff); }
+                .mercado-copy { max-width: 540px; }
+                .mercado-chip, .products-eyebrow { color: #3483fa; font-size: 12px; font-weight: 800; letter-spacing: 1.5px; }
+                .mercado-intro .hero-title { display: block; margin: 12px 0; color: #1b2838; font-size: clamp(38px, 5vw, 58px); line-height: 1.08; letter-spacing: -1.5px; animation: none; }
+                .mercado-intro .hero-lead { margin: 0 0 12px; color: #3483fa; font-size: 20px; text-align: left; }
+                .mercado-text { max-width: 470px; color: #586779; line-height: 1.7; }
+                .mercado-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 24px; }
+                .mercado-cta a { display: inline-block; padding: 13px 20px; border-radius: 8px; background: #3483fa; color: #fff; font-weight: 700; text-decoration: none; transition: transform .2s, background .2s; }
+                .mercado-cta a:hover { transform: translateY(-2px); background: #2968c8; }
+                .mercado-cta .mercado-cta-secondary { border: 1px solid #d6deea; background: transparent; color: #34465c; }
+                .mercado-cta .mercado-cta-secondary:hover { background: #f2f6fc; }
+                .mercado-image-wrap { overflow: hidden; border-radius: 14px; box-shadow: 0 18px 42px rgba(24, 54, 92, .15); }
+                .mercado-image { display: block; width: 100%; height: 290px; object-fit: cover; }
+                .products-section { max-width: 1180px; margin: 44px auto; padding: 0 24px; }
+                .products-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 22px; }
+                .products-heading h2 { margin: 7px 0 0; color: #1b2838; font-size: 29px; text-shadow: none; }
+                .products-heading > p { max-width: 390px; margin: 0 0 3px; color: #64748b; text-align: right; }
+                .products-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+                .product-card { overflow: hidden; border: 1px solid #e5e9f0; border-radius: 12px; background: #fff; box-shadow: 0 4px 16px rgba(20, 40, 70, .06); transition: transform .2s, box-shadow .2s; }
+                .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(20, 40, 70, .12); }
+                .product-image-link { position: relative; display: block; overflow: hidden; background: #eef3f9; }
+                .product-image-link img { display: block; width: 100%; height: 170px; object-fit: cover; transition: transform .3s; }
+                .product-card:hover .product-image-link img { transform: scale(1.04); }
+                .product-label { position: absolute; top: 12px; left: 12px; padding: 6px 9px; border-radius: 4px; background: #3483fa; color: #fff; font-size: 10px; font-weight: 800; letter-spacing: .4px; }
+                .product-label-new { background: #182b49; }
+                .product-label-value { background: #008f68; }
+                .product-info { padding: 16px; }
+                .product-category { color: #78869a; font-size: 10px; font-weight: 800; letter-spacing: .8px; }
+                .product-info h3 { min-height: 44px; margin: 8px 0 5px; color: #23344d; font-size: 17px; line-height: 1.3; text-shadow: none; animation: none; }
+                .product-info p { min-height: 48px; margin: 0 0 10px; color: #64748b; font-size: 13px; line-height: 1.5; letter-spacing: 0; text-align: left; }
+                .product-rating { color: #f5a623; font-size: 13px; letter-spacing: 1px; }
+                .product-rating span { color: #536276; font-size: 12px; letter-spacing: 0; }
+                .product-price { margin-top: 10px; color: #1b2838; font-size: 22px; font-weight: 800; }
+                .product-price small { color: #778397; font-size: 11px; font-weight: 600; }
+                .product-link { display: flex; justify-content: space-between; margin-top: 12px; padding-top: 11px; border-top: 1px solid #edf0f4; color: #3483fa; font-size: 13px; font-weight: 700; text-decoration: none; }
+                .product-link:hover { color: #1d5db4; }
+                @media (max-width: 900px) { .mercado-intro { margin-right: 20px; margin-left: 20px; gap: 28px; } .products-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+                @media (max-width: 600px) { .mercado-intro { grid-template-columns: 1fr; gap: 24px; margin: 16px 12px 0; padding: 30px 22px; } .mercado-image { height: 210px; } .mercado-intro .hero-title { font-size: 42px; } .products-section { margin: 34px auto; padding: 0 12px; } .products-heading { display: block; } .products-heading > p { margin-top: 8px; text-align: left; } .products-heading h2 { font-size: 25px; } .products-grid { gap: 12px; } .product-image-link img { height: 130px; } .product-info { padding: 12px; } .product-info h3 { font-size: 15px; } .product-info p { min-height: 65px; font-size: 12px; } }
+                body { background: #f5f5f5; color: #333; }
+                nav {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    background: #ffe600;
+                    border-bottom: 1px solid #e6cf00;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+                }
+                .sena-brand { display: inline-flex; align-items: center; gap: 10px; margin-left: 18px; color: #14532d; font-size: 13px; font-weight: 800; letter-spacing: .3px; text-decoration: none; }
+                .sena-brand img { display: block; width: 42px; height: 42px; object-fit: contain; }
+                .menu-toggle {
+                    margin: 7px 12px;
+                    border-color: transparent;
+                    background: transparent;
+                }
+                .menu-toggle span { background: #3483fa; }
+                .menu-toggle:hover { background: rgba(52, 131, 250, 0.12); }
+                .navigation-list {
+                    right: auto;
+                    width: min(260px, 90vw);
+                    background: #fff;
+                    border: 1px solid #e5e5e5;
+                    border-radius: 0 0 8px 8px;
+                    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+                }
+                .navigation-list a { border-color: transparent; color: #3483fa; }
+                .navigation-list a:hover, .navigation-list a:focus-visible { background: #eef5ff; color: #2968c8; }
+                .announcement-banner { background: #ffe600; color: #333; }
+                .announcement-banner p { color: #333; }
+                .announcement-badge { border-color: rgba(0, 0, 0, 0.25); }
+                .hero-intro { background: #fff; }
+                .hero-title, .hero-message h2, #secciones-informacion h2 { color: #333; }
+                .hero-lead, .hero-message h3, #software-welcome { color: #3483fa; }
+                #software-card { border-color: #e5e5e5; background: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+                .software-card-copy p { color: #4b6475; }
+                .software-card-copy h2 { color: #3483fa; }
+                .instructors-photo { background: #eef5ff; }
+                .instructors-photo figcaption { color: #42566b; }
+                .footer-marketplace { border-top-color: #ffe600; }
+                @media (max-width: 420px) { .sena-brand { gap: 6px; margin-left: 10px; font-size: 11px; } .sena-brand img { width: 36px; height: 36px; } }
             </style>
+            <script>
+                const menuToggle = document.querySelector('.menu-toggle');
+                const navigationList = document.querySelector('.navigation-list');
+                menuToggle.addEventListener('click', () => {
+                    const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+                    menuToggle.setAttribute('aria-expanded', String(!isOpen));
+                    navigationList.classList.toggle('is-open', !isOpen);
+                });
+                const carouselTrack = document.querySelector('.carousel-track');
+                const carousel = document.querySelector('.photo-carousel');
+                const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+                let carouselTimer;
+                const moveCarousel = (direction = 1) => {
+                    const card = carouselTrack.querySelector('figure');
+                    const step = card ? card.getBoundingClientRect().width + 18 : carouselTrack.clientWidth;
+                    const atEnd = carouselTrack.scrollLeft + carouselTrack.clientWidth >= carouselTrack.scrollWidth - 8;
+                    if (direction > 0 && atEnd) {
+                        carouselTrack.scrollTo({ left: 0, behavior: 'smooth' });
+                    } else {
+                        carouselTrack.scrollBy({ left: direction * step, behavior: 'smooth' });
+                    }
+                };
+                const stopCarousel = () => window.clearInterval(carouselTimer);
+                const startCarousel = () => {
+                    stopCarousel();
+                    if (!reducedMotion.matches && !document.hidden) {
+                        carouselTimer = window.setInterval(() => moveCarousel(), 4000);
+                    }
+                };
+                document.querySelector('.carousel-previous').addEventListener('click', () => moveCarousel(-1));
+                document.querySelector('.carousel-next').addEventListener('click', () => moveCarousel());
+                carousel.addEventListener('mouseenter', stopCarousel);
+                carousel.addEventListener('mouseleave', startCarousel);
+                carousel.addEventListener('focusin', stopCarousel);
+                carousel.addEventListener('focusout', startCarousel);
+                document.addEventListener('visibilitychange', startCarousel);
+                reducedMotion.addEventListener('change', startCarousel);
+                startCarousel();
+            </script>
             </body>
         </html>
 </html>
